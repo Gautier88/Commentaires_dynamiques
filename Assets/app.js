@@ -16,13 +16,13 @@ message.value = "";
 }
 
 function validateForm() {  
-let userIdentity1 = document.createTextNode(firstName.value);
-let userIdentity2 = document.createTextNode(lastName.value);
+let userFirstName = document.createTextNode(firstName.value);
+let userLastName = document.createTextNode(lastName.value);
 let newMessage = document.createTextNode(message.value);
 let space = document.createTextNode(" ");
-identity.appendChild(userIdentity1);
+identity.appendChild(userFirstName);
 identity.appendChild(space);
-identity.appendChild(userIdentity2);
+identity.appendChild(userLastName);
 comment.appendChild(newMessage);
 divComment.style.display="block";
 deleteForm();
